@@ -1,0 +1,9 @@
+#!/bin/sh
+#to start installed ssh
+/sbin/sshd
+echo " * ssh........... [OK]"
+sleep 3
+#to start installed mariadb
+/etc/init.d/mariadb start > /dev/null
+echo " * mariadb....... [OK]"
+exec "$@"
