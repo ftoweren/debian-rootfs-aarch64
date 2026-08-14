@@ -17,7 +17,7 @@ https://github.com/armbian/community/releases/download/25.11.0-trunk.472/Armbian
 docker pull ftoweren/debian-rootfs-aarch64:latest
 ```
 
-### Run Container (With Persistent Volume & Custom Ports)
+### Run Container
 ```bash
 docker run -itd -p 8822:22 -p 8880:80 -p 8843:443 -p 8853:53 --name debian-rootfs --restart always \
   ftoweren/debian-rootfs-aarch64:latest
